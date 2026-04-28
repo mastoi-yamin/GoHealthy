@@ -120,12 +120,6 @@ http://localhost:3000/dashboard.html
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots here before submitting to hackathon
-
----
-
 ## 🔮 Future Improvements
 
 * Database integration (MongoDB)
@@ -138,7 +132,7 @@ http://localhost:3000/dashboard.html
 
 ## 👨‍💻 Author
 
-Developed by **[Your Name]**
+Developed by **Yamin Alee**
 
 ---
 
