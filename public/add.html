@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Add Request</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo">GoHealthy</div>
+
+      <a href="dashboard.html"><i class="fa fa-home"></i> Dashboard</a>
+      <a href="requests.html"><i class="fa fa-list"></i> Requests</a>
+      <a href="add.html"><i class="fa fa-plus"></i> Add</a>
+      <a href="completed.html"><i class="fa fa-check"></i> Completed</a>
+    </div>
+
+    <div class="main">
+      <h2>Add Request</h2>
+
+      <div class="card">
+        <input id="title" placeholder="Title" />
+        <input id="description" placeholder="Description" />
+        <input id="location" placeholder="Location" />
+
+        <select id="urgency">
+          <option>High</option>
+          <option>Medium</option>
+          <option>Low</option>
+        </select>
+
+        <button onclick="add()">
+          <i class="fa fa-paper-plane"></i> Submit
+        </button>
+      </div>
+
+      <div class="card"><p>Fill accurate details</p></div>
+      <div class="card"><p>Urgent requests first</p></div>
+      <div class="card"><p>Stay responsible</p></div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

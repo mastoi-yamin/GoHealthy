@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <div class="sidebar">
+      <div class="logo">GoHealthy</div>
+
+      <a href="dashboard.html"><i class="fa fa-home"></i> Dashboard</a>
+      <a href="requests.html"><i class="fa fa-list"></i> Requests</a>
+      <a href="add.html"><i class="fa fa-plus"></i> Add</a>
+      <a href="completed.html"><i class="fa fa-check"></i> Completed</a>
+    </div>
+
+    <div class="main">
+      <div class="topbar">
+        <h2>Dashboard</h2>
+        <!-- <input placeholder="Search" /> -->
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <h3 id="total">0</h3>
+          <p>Total</p>
+        </div>
+        <div class="stat-card">
+          <h3 id="completed">0</h3>
+          <p>Completed</p>
+        </div>
+        <div class="stat-card">
+          <h3 id="pending">0</h3>
+          <p>Pending</p>
+        </div>
+      </div>
+
+      <div class="grid">
+        <div class="card"><canvas id="urgencyChart"></canvas></div>
+        <div class="card"><canvas id="statusChart"></canvas></div>
+      </div>
+
+      <div class="card">
+        <h3>Recent Requests</h3>
+        <div id="recent"></div>
+      </div>
+
+      <div class="card">
+        <h3>Quick Actions</h3>
+        <button onclick="location.href = 'add.html'">Add Request</button>
+        <button onclick="location.href = 'requests.html'">View Requests</button>
+      </div>
+
+      <div class="card">
+        <h3>About</h3>
+        <p>Platform to manage and respond to health-related requests.</p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
