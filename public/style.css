@@ -761,6 +761,10 @@ body {
   border-right: 1px solid rgba(255, 255, 255, 0.05);
 }
 
+canvas {
+  max-height: 250px;
+}
+
 .logo {
   font-size: 20px;
   font-weight: bold;
