@@ -164,5 +164,5 @@ function recentData() {
     });
 }
 
-// INITIAL LOAD
+
 load();
